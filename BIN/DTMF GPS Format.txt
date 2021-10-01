@@ -1,0 +1,116 @@
+File Encoding: UTF-8
+
+Author: dkxce (dkxce@mail.ru)
+   http://www.radioscanner.ru/forum/index.php?action=userinfo&user=55108
+
+=====================================================
+============= Zastone DTMF GPS Format ===============
+=============  Abbree DTMF GPS Format ===============
+=====================================================
+//                                                 //
+//  О DTMF:  https://ru.wikipedia.org/wiki/DTMF    //
+//                                                 //
+=====================================================
+============= Zastone DTMF GPS Format ===============
+=============  Abbree DTMF GPS Format ===============
+=====================================================
+
+Этот файл описывает формат пакетов обмена координатами между рациями c GPS via DTMF.
+К ним относятся такие, как: Abbree AR-F8, Zastone ZT-889G и прочие. 
+
+Packet structure:
+Структура пакета
+	>
+	> GPS REQUEST (9 symbols);
+	> Запрос местоположения (9 символов);
+	>
+		<ANI CODE><HEADER>
+		<CALLCODE><HEADER>
+		<CALLCODE>  A0A
+		<ANI CODE>  A0A
+		 6 digits    3 
+	>
+	> GPS REPORT (33 symbols):
+	> Отчет с местоположением (33 символа);
+	>
+		<CALLCODE><HEADER><LONGITUDE><LATITUDE><ALTITUDE>  
+		<ANI CODE><HEADER><LONGITUDE><LATITUDE><ALTITUDE>  
+		<CALLCODE>  B0B     <LON>      <LAT>     <ALT>
+		<ANI CODE>  B0B     <LON>      <LAT>     <ALT>
+		6 digits     3     4 bytes    4 bytes   8 digits
+	>
+	Where:
+	Где:
+		<CALLCODE>
+		<ANI CODE>  - 6 symbols, 6 DECIMAL digits: 100000..999999 
+					- 6 символов, числовой код рации (ANI ID) для селективного вызова в диапазоне 100000..999999 
+		<HEADER>    - 3 symbols, A0A (Request) or B0B (Report)
+					- 3 символа, идентификатор типа пакета, A0A (Запрос) или BOB (Отчет)
+		<LONGITUDE> - 8 symbols, 4 HEXIMAL bytes (*-E,#-F), longitude in cemicircles (lon * 1000000)
+					- 8 символов, 4 байта в 16-ричной системе (*-E,#-F), долгота  * 1000000
+		<LATITUDE>  - 8 symbols, 4 HEXIMAL bytes (*-E,#-F), latitude in cemicircles (lat * 1000000)
+					- 8 символов, 4 байта в 16-ричной системе (*-E,#-F), широта  * 1000000
+		<ALTITUDE>  - 8 symbols, 8 DECIMAL digits, altitude in millimeters  
+					- 8 символов, число в 10-ричной системе, высота в миллиметрах
+	>
+	Example:
+	Примеры:
+		Callsign: 12345
+		Lon: E 037 42' 47.0" (37.71308)
+		Lat: N 55 50' 26.3"  (55.840646)
+		Alt: 152 meters
+		Packet:
+			123456 B0B 023F74B8 03540F86 00152000
+				or
+			123456 B0B 023#74B8 03540#86 00152000
+
+CALLCODE
+|     HEADER
+|     |  LONGITUDE
+|     |  |       LATITUDE
+|     |  |       |       ALTITUDE
+|	  |  |       |       |
+123456B0B023#74B803540#8600152000  - REPORT  (B0B)
+123456B0B023F74B803540F8600152000  - REPORT  (B0B)
+123456A0A                          - REQUEST (A0A)
+
+359230     N55.55   E37.55     198.0M
+359230 B0B 023C#7B0 034#A030 00198000
+	
+=====================================================
+=====================  DELAYS =======================
+=====================================================
+	
+Correct DTFM Preferences:
+
+  Single tone length: 
+	180 ms (SoundForge); 
+	160 ms (DtmfGenerator); 
+	200 ms (Tranceiver)!!!
+	
+  Break length: 
+	140 ms (SoundForge); 
+	130 ms (DtmfGenerator); 
+	200 ms (Tranceiver)!!!
+
+=====================================================
+===================== TONES =========================
+=====================================================
+
+1 			2 			3 			A 			697 Гц
+4 			5 			6 			B 			770 Гц
+7 			8 			9 			C 			852 Гц
+*/E			0 			#/F			D 			941 Гц
+1209 Гц 	1336 Гц 	1477 Гц 	1633 Гц 
+
+=====================================================
+==================== BASS.NET =======================
+=====================================================
+
+spectrum freq = 8000 / 1024 * index (FFT1024 returns 512 bytes)
+index_89 = 695.3125
+index_189 = 1476.5625
+
+=====================================================
+=====================================================
+=====================================================

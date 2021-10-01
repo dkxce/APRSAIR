@@ -1,0 +1,1 @@
+@nssm32.exe start "APRSAIR" 

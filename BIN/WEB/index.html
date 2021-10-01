@@ -1,0 +1,77 @@
+﻿<html><head><title>%[[SERVER]]%</title></head>
+<body><h2>Incoming GPS Data:</h2>
+<small style="color:silver;">Format: CALLSIGN >> LATITUDE LONGITUDE ALTITUDE ANICODE \r\n</small><br/><br/>
+<div id="DATA">%[[DATA]]%</div><br/>
+<a id="viewmap" href="/map.html">View Map</a> |
+<a id="kalive" href="#" onclick="init_web_socket();return false;">Keep-Alive</a>
+</body>
+<script type="text/javascript">			
+		var socket_url = 'ws://'+location.hostname+':'+location.port+'/';
+		var socket = 0;
+		
+		function init_web_socket()
+		{
+			if(socket == 0)
+			{
+				socket = new WebSocket(socket_url);
+				socket.onopen = function() { UPDATE('<b style="color:red;">Server connection established</b>'); };
+				socket.onmessage = function (evt) { UPDATE2(evt.data);  };
+				socket.onclose = function() 
+				{ 
+					UPDATE('<b style="color:red;">Server connection closed</b>'); 
+					socket = 0;
+					var del = document.getElementById('kalive');
+					del.innerHTML = "keep-alive";
+				};
+			
+				var del = document.getElementById('kalive');
+				del.innerHTML = "ping server";
+			}
+			else
+			{
+				PING();
+			};
+		};
+		
+		function PING() { socket.send("Ping"); }
+		
+		function UPDATE(txt) 
+		{ 		
+		    var upt = document.getElementById('DATA');
+			var dt = getDate();
+			if(dt.substr(0,4) == txt.substr(0,4))
+				upt.innerHTML =  txt + '<br/>' + upt.innerHTML;
+			else
+				upt.innerHTML =  dt + ': ' + txt + '<br/>' + upt.innerHTML;
+		}
+		
+		function UPDATE2(data)
+		{
+			if (data instanceof Blob) 
+			{
+				var reader = new FileReader();
+				reader.onload = () => { UPDATE2(reader.result); };
+				reader.readAsText(data);
+				return;
+			};        		
+			UPDATE('<b style="color:blue;">' + data + '</b>');
+		}	
+
+		function getDate() 
+		{
+			var temp = new Date();
+			var dateStr = padStr(temp.getFullYear()) + "-" +
+							padStr(1 + temp.getMonth()) + "-" +
+							padStr(temp.getDate()) + " " +
+							padStr(temp.getHours()) + ":" +
+							padStr(temp.getMinutes()) + ":" +
+							padStr(temp.getSeconds());
+			return dateStr;
+		}
+		
+		function padStr(i) 
+		{
+			return (i < 10) ? "0" + i : "" + i;
+		}
+</script>
+</html>

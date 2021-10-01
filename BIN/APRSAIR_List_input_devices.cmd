@@ -1,0 +1,2 @@
+APRSAIR.exe /listrecorddevices
+pause

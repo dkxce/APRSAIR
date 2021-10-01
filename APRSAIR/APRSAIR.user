@@ -1,0 +1,5 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <StartArguments>/listen /source=1 /httpserv=80 /aprsserv=12015 /serverName="TEST TEST" /afsk=0</StartArguments>
+  </PropertyGroup>
+</Project>

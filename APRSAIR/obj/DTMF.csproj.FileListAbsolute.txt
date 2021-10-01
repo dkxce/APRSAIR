@@ -1,0 +1,10 @@
+C:\Downloads\CD-REC\TEST\ConsoleApplication5\ConsoleApplication5\bin\Debug\ConsoleApplication5.exe
+C:\Downloads\CD-REC\TEST\ConsoleApplication5\ConsoleApplication5\bin\Debug\ConsoleApplication5.pdb
+C:\Downloads\CD-REC\TEST\ConsoleApplication5\ConsoleApplication5\obj\Debug\ResolveAssemblyReference.cache
+C:\Downloads\CD-REC\TEST\ConsoleApplication5\ConsoleApplication5\obj\Debug\ConsoleApplication5.exe
+C:\Downloads\CD-REC\TEST\ConsoleApplication5\ConsoleApplication5\obj\Debug\ConsoleApplication5.pdb
+D:\PROJECTS\BaoFeng 2-Way Radio HAM (Рации)\HAM\APRS\DTMF\CSharpDTMF_[ByMIL]\obj\Debug\ResolveAssemblyReference.cache
+D:\PROJECTS\BaoFeng 2-Way Radio HAM (Рации)\HAM\APRS\DTMF\CSharpDTMF_[ByMIL]\bin\Debug\DTMFCoder.exe
+D:\PROJECTS\BaoFeng 2-Way Radio HAM (Рации)\HAM\APRS\DTMF\CSharpDTMF_[ByMIL]\bin\Debug\DTMFCoder.pdb
+D:\PROJECTS\BaoFeng 2-Way Radio HAM (Рации)\HAM\APRS\DTMF\CSharpDTMF_[ByMIL]\obj\Debug\DTMFCoder.exe
+D:\PROJECTS\BaoFeng 2-Way Radio HAM (Рации)\HAM\APRS\DTMF\CSharpDTMF_[ByMIL]\obj\Debug\DTMFCoder.pdb

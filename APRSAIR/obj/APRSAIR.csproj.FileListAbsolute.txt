@@ -1,0 +1,10 @@
+D:\PROJECTS\BaoFeng 2-Way Radio HAM (Рации)\HAM\APRS\APRSAIR\BIN\APRSAIR.exe
+D:\PROJECTS\BaoFeng 2-Way Radio HAM (Рации)\HAM\APRS\APRSAIR\BIN\APRSAIR.pdb
+D:\PROJECTS\BaoFeng 2-Way Radio HAM (Рации)\HAM\APRS\APRSAIR\APRSAIR_[ByMIL]\obj\Debug\ResolveAssemblyReference.cache
+D:\PROJECTS\BaoFeng 2-Way Radio HAM (Рации)\HAM\APRS\APRSAIR\APRSAIR_[ByMIL]\obj\Debug\APRSAIR.exe
+D:\PROJECTS\BaoFeng 2-Way Radio HAM (Рации)\HAM\APRS\APRSAIR\APRSAIR_[ByMIL]\obj\Debug\APRSAIR.pdb
+D:\PROJECTS\BaoFeng 2-Way Radio HAM (Рации)\HAM\APRS\MyAPRSSoft\APRSAIR\APRSAIR_[ByMIL]\obj\Debug\APRSAIR.exe
+D:\PROJECTS\BaoFeng 2-Way Radio HAM (Рации)\HAM\APRS\MyAPRSSoft\APRSAIR\APRSAIR_[ByMIL]\obj\Debug\APRSAIR.pdb
+D:\PROJECTS\BaoFeng 2-Way Radio HAM (Рации)\HAM\APRS\MyAPRSSoft\APRSAIR\BIN\APRSAIR.exe
+D:\PROJECTS\BaoFeng 2-Way Radio HAM (Рации)\HAM\APRS\MyAPRSSoft\APRSAIR\BIN\APRSAIR.pdb
+D:\PROJECTS\BaoFeng 2-Way Radio HAM (Рации)\HAM\APRS\MyAPRSSoft\APRSAIR\APRSAIR_[ByMIL]\obj\Debug\ResolveAssemblyReference.cache

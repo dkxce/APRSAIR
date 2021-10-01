@@ -1,0 +1,5 @@
+C:\Downloads\CD-REC\TEST\ConsoleApplication5\ConsoleApplication5\bin\Debug\ConsoleApplication5.exe
+C:\Downloads\CD-REC\TEST\ConsoleApplication5\ConsoleApplication5\bin\Debug\ConsoleApplication5.pdb
+C:\Downloads\CD-REC\TEST\ConsoleApplication5\ConsoleApplication5\obj\Debug\ResolveAssemblyReference.cache
+C:\Downloads\CD-REC\TEST\ConsoleApplication5\ConsoleApplication5\obj\Debug\ConsoleApplication5.exe
+C:\Downloads\CD-REC\TEST\ConsoleApplication5\ConsoleApplication5\obj\Debug\ConsoleApplication5.pdb

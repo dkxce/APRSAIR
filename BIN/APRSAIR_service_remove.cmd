@@ -1,0 +1,1 @@
+@nssm32.exe remove "APRSAIR" 
