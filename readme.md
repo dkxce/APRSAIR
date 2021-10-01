@@ -166,3 +166,5 @@ over soundcard and allow to view it over console, web (HTTP), APRS and send via 
 	Примеры:
 		APRSAIR_Run_AGW.cmd
 		APRSAIR_Run_KISS_TCP.cmd
+
+<img src="window.png"/>
