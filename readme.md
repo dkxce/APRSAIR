@@ -122,7 +122,8 @@ over soundcard and allow to view it over console, web (HTTP), APRS and send via 
 	Пример:
 		APRSAIR_Run_as_WaveListener.cmd
 		
-Работа в режиме клиента KISS/AGW:
+Работа в режиме клиента KISS/AGW:    
+KISS/AGW Listen Mode:
 
 	APRSAIR.exe /agw /source=127.0.0.1:8000:0 [/afsk=0] [/send="..."] [/aprs="tcp://.../"] [/aprs="udp://.../"] [/httpserv=80] [/aprsserv=14580] [/nogps2console] [/useNormalPassw] [/serverName="..."]
 	APRSAIR.exe /kiss /source=127.0.0.1:8100 [/afsk=0] [/send="..."] [/aprs="tcp://.../"] [/aprs="udp://.../"] [/httpserv=80] [/aprsserv=14580] [/nogps2console] [/useNormalPassw] [/serverName="..."]
@@ -133,7 +134,7 @@ over soundcard and allow to view it over console, web (HTTP), APRS and send via 
 		/kiss - задаем режим работы KISS
 		/source=... - server:port:radio для AGW (например: 127.0.0.1:8000:0) где radio - порт/номер радио в AGW Packet Engine
 		            - server:port для Kiss через TCP/IP (например: 127.0.0.1:8100)
-					- serial:baud для Kiss через COM (например: COM3:9600)
+			    - serial:baud для Kiss через COM (например: COM3:9600)
 		/afsk=... c какой карты в системе слушать аудиопоток (0,1,2...) 
 					  для анализа APRS AFSK1200 сигнала
 					  используйте /listrecorddevices для получения списка устройств 
