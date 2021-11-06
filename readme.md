@@ -32,7 +32,7 @@ over soundcard and allow to view it over console, web (HTTP), APRS and send via 
 	6-тизначный ANI CODE !!!
 
 
-Запуск в тестовом режиме (проврка работоспособности DTMF):
+Запуск в тестовом режиме (проверка работоспособности DTMF):
 
 	APRSAIR.exe
 	
