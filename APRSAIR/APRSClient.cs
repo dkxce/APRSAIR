@@ -9,11 +9,11 @@ namespace APRSForwarder
     public class APRSClient
     {        
         const string softName = "APRSAir";
-        const string softVer = "1.17";
+        const string softVer = "1.18";
 
         private string callsign = "UNKNOWN";
         private string passw = "-1";
-        private string filter = "p/R*/U*";
+        public string filter = "";
 
         // http://euro.aprs2.net:14501/
         private string APRSserver = "euro.aprs2.net";
