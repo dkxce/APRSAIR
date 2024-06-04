@@ -1,21 +1,15 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
-using System.Text.RegularExpressions;
 using System.Net;
 using System.Net.Sockets;
 using System.Threading;
-using System.Xml;
-using System.Xml.Serialization;
 
 namespace APRSForwarder
 {
     public class APRSClient
     {        
-        const string softName = "DTMFSampleAPRSClient";
-        const string softVer = "0.1";
+        const string softName = "APRSAir";
+        const string softVer = "1.17";
 
         private string callsign = "UNKNOWN";
         private string passw = "-1";

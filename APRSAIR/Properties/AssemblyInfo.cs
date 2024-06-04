@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("APRSAIR")]
-[assembly: AssemblyDescription("APRS Listener: AFSK1200/KISS/AGW/DTMF")]
+[assembly: AssemblyTitle("APRSAir")]
+[assembly: AssemblyDescription("APRSAir: AFSK1200/KISS/AGW/DTMF")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("milokz@gmail.com")]
-[assembly: AssemblyProduct("APRSAIR")]
-[assembly: AssemblyCopyright("")]
+[assembly: AssemblyCompany("https://github.com/dkxce/APRSAIR")]
+[assembly: AssemblyProduct("APRSAir")]
+[assembly: AssemblyCopyright("Copyrights (c) dkxce 2021-2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -29,5 +29,5 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("0.0.1.16")]
-[assembly: AssemblyFileVersion("0.0.1.16")]
+[assembly: AssemblyVersion("0.0.1.17")]
+[assembly: AssemblyFileVersion("0.0.1.17")]

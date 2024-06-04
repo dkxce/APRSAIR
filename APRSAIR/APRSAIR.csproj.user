@@ -1,4 +1,4 @@
-﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <StartArguments>/agw /source=127.0.0.1:8000:0 /!send="http://127.0.0.1/?user={ID}&amp;lat={LAT}&amp;lon={LON}&amp;alt={ALT}" /!aprs="tcp://CTAKAH:12469@127.0.0.1:12015/" /!aprs="udp://UNKNOWN:-1@russia.aprs2.net:8080/" /httpserv=80 /aprsserv=14580 /serverName="My APRSAIR"</StartArguments>
   </PropertyGroup>
